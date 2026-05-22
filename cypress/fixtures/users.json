@@ -1,0 +1,11 @@
+{
+  "validUser": {
+    "email": "test.customer@lewisstores.local",
+    "password": "Password123!"
+  },
+
+  "invalidUser": {
+    "email": "test.customer@lewisstores.local",
+    "password": "WrongPassword"
+  }
+}
