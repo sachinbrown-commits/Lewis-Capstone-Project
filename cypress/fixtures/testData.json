@@ -1,0 +1,30 @@
+{
+  "validUser": {
+    "email": "test.customer@lewisstores.local",
+    "password": "Password123!"
+  },
+  "validCard": {
+    "number": "4111111111111111",
+    "expiry": "12/26",
+    "cvv": "123",
+    "name": "Test Customer"
+  },
+  "invalidCard": {
+    "number": "1234567890123456",
+    "expiry": "01/20",
+    "cvv": "000",
+    "name": "Bad Card"
+  },
+  "declinedCard": {
+    "number": "4000000000000002",
+    "expiry": "12/26",
+    "cvv": "123",
+    "name": "Test Declined"
+  },
+  "validCoupon": "DISCOUNT10",
+  "invalidCoupon": "FAKECODE999",
+  "product": {
+    "name": "Test Product",
+    "quantity": 2
+  }
+}
