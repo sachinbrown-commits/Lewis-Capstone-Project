@@ -1,0 +1,178 @@
+{
+  "info": {
+    "_postman_id": "0af4191c-6094-4496-8fb1-6649e6fc569b",
+    "name": "Authentication APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53967619"
+  },
+  "item": [
+    {
+      "name": "T-API-AUTH-001 -Valid Login",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c2VyLTAwMSIsImVtYWlsIjoidGVzdC5jdXN0b21lckBsZXdpc3N0b3Jlcy5sb2NhbCIsInJvbGUiOiJDdXN0b21lciIsIm5iZiI6MTc4MTc3ODEyMywiZXhwIjoxNzgyMzgyOTIzLCJpYXQiOjE3ODE3NzgxMjMsImlzcyI6Ikxld2lzU3RvcmVzTW9ja0lzc3VlciIsImF1ZCI6Ikxld2lzU3RvcmVzTW9ja0F1ZGllbmNlIn0.XNSeYQgCSDtVO6Tyzq6IuHiMmiqQqsrdhqzKW-Mkau8",
+    "user": {
+        "id": "user-001",
+        "email": "test.customer@lewisstores.local",
+        "role": "Customer",
+        "fullName": "Test Customer One",
+        "phone": "555-0001",
+        "address": "123 Main St, City, State 12345"
+    }
+}]
+    },
+    {
+      "name": "T-API-AUTH-002-Invalid Email",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "message": "Invalid credentials."
+}]
+    },
+    {
+      "name": "T-API-AUTH-003-Invalid Password",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "message": "Invalid credentials."
+}]
+    },
+    {
+      "name": "T-API-AUTH-005-Register User",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c2VyLTAwMSIsImVtYWlsIjoidGVzdC5jdXN0b21lckBsZXdpc3N0b3Jlcy5sb2NhbCIsInJvbGUiOiJDdXN0b21lciIsIm5iZiI6MTc3OTE3MTU0OSwiZXhwIjoxNzc5Nzc2MzQ5LCJpYXQiOjE3NzkxNzE1NDksImlzcyI6Ikxld2lzU3RvcmVzTW9ja0lzc3VlciIsImF1ZCI6Ikxld2lzU3RvcmVzTW9ja0F1ZGllbmNlIn0.CHabTJn8u2_UHlF6iWw5f9XPKFmtIl7HKnCJMl9QbKY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fullName\": \"Umair Jattiem\",\r\n  \"email\": \"umairjattiem@example.com\",\r\n  \"password\": \"SecurePassword123!\",\r\n  \"phone\": \"5551234\",\r\n  \"address\": \"123 Main Street\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "T-API-AUTH-007-Invalid Email Format",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "message": "Invalid credentials."
+}]
+    },
+    {
+      "name": "Update User",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Token Validtion",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Authentication Test",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"test@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c2VyLTAwMSIsImVtYWlsIjoidGVzdC5jdXN0b21lckBsZXdpc3N0b3Jlcy5sb2NhbCIsInJvbGUiOiJDdXN0b21lciIsIm5iZiI6MTc3OTE3MTU0OSwiZXhwIjoxNzc5Nzc2MzQ5LCJpYXQiOjE3NzkxNzE1NDksImlzcyI6Ikxld2lzU3RvcmVzTW9ja0lzc3VlciIsImF1ZCI6Ikxld2lzU3RvcmVzTW9ja0F1ZGllbmNlIn0.CHabTJn8u2_UHlF6iWw5f9XPKFmtIl7HKnCJMl9QbKY",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

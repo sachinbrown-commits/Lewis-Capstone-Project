@@ -1,0 +1,322 @@
+{
+  "info": {
+    "_postman_id": "ac1a4bf9-06bf-4e5d-beee-b2202fe0c4a0",
+    "name": "Shipment APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53967619"
+  },
+  "item": [
+    {
+      "name": "T-API-SHIP-001-Create Shipment",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "id": "LWS-87585",
+    "date": "18 Jun 2026",
+    "status": "Processing",
+    "total": 7699.00,
+    "userId": "user-001",
+    "items": "Miren Coffee Table",
+    "orderItems": [
+        {
+            "id": 7,
+            "orderId": "LWS-87585",
+            "productId": "miren-table",
+            "quantity": 1,
+            "unitPrice": 7699.00,
+            "lineTotal": 7699.00,
+            "order": null,
+            "product": {
+                "id": "miren-table",
+                "title": "Miren Coffee Table",
+                "description": "Solid ash base and honed stone top.",
+                "price": 7699.00,
+                "oldPrice": null,
+                "tag": null,
+                "rating": 4.5,
+                "category": "Furniture",
+                "categoryId": "cat-1",
+                "categoryEntity": null,
+                "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1200",
+                "sku": "LEW-FUR-0003",
+                "stockQuantity": 15,
+                "isActive": true
+            }
+        }
+    ]
+}]
+    },
+    {
+      "name": "T-API-SHIP-002-Retrieve All Orders",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Orders retrieved successfully\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c2VyLTAwMSIsImVtYWlsIjoidGVzdC5jdXN0b21lckBsZXdpc3N0b3Jlcy5sb2NhbCIsInJvbGUiOiJDdXN0b21lciIsIm5iZiI6MTc3OTE3MTU0OSwiZXhwIjoxNzc5Nzc2MzQ5LCJpYXQiOjE3NzkxNzE1NDksImlzcyI6Ikxld2lzU3RvcmVzTW9ja0lzc3VlciIsImF1ZCI6Ikxld2lzU3RvcmVzTW9ja0F1ZGllbmNlIn0.CHabTJn8u2_UHlF6iWw5f9XPKFmtIl7HKnCJMl9QbKY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/Orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Orders"
+          ]
+        }
+      },
+      "response": [[
+    {
+        "id": "ORD-001-20260512",
+        "date": "May 12, 2026",
+        "status": "Confirmed",
+        "total": 32699.11,
+        "userId": "user-001",
+        "items": "Luca Modular Sofa x1, Miren Coffee Table x1",
+        "orderItems": [
+            {
+                "id": 1,
+                "orderId": "ORD-001-20260512",
+                "productId": "luca-modular",
+                "quantity": 1,
+                "unitPrice": 24999.00,
+                "lineTotal": 24999.00,
+                "order": null,
+                "product": {
+                    "id": "luca-modular",
+                    "title": "Luca Modular Sofa",
+                    "description": "Textured ivory upholstery with brushed oak legs.",
+                    "price": 24999.00,
+                    "oldPrice": 27999.00,
+                    "tag": "Limited Edition",
+                    "rating": 4.8,
+                    "category": "Furniture",
+                    "categoryId": "cat-1",
+                    "categoryEntity": null,
+                    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1200",
+                    "sku": "LEW-FUR-0001",
+                    "stockQuantity": 12,
+                    "isActive": true
+                }
+            },
+            {
+                "id": 2,
+                "orderId": "ORD-001-20260512",
+                "productId": "miren-table",
+                "quantity": 1,
+                "unitPrice": 7699.00,
+                "lineTotal": 7699.00,
+                "order": null,
+                "product": {
+                    "id": "miren-table",
+                    "title": "Miren Coffee Table",
+                    "description": "Solid ash base and honed stone top.",
+                    "price": 7699.00,
+                    "oldPrice": null,
+                    "tag": null,
+                    "rating": 4.5,
+                    "category": "Furniture",
+                    "categoryId": "cat-1",
+                    "categoryEntity": null,
+                    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1200",
+                    "sku": "LEW-FUR-0003",
+                    "stockQuantity": 15,
+                    "isActive": true
+                }
+            }
+        ]
+    },
+    {
+        "id": "LWS-87585",
+        "date": "18 Jun 2026",
+        "status": "Processing",
+        "total": 7699.00,
+        "userId": "user-001",
+        "items": "Miren Coffee Table",
+        "orderItems": [
+            {
+                "id": 7,
+                "orderId": "LWS-87585",
+                "productId": "miren-table",
+                "quantity": 1,
+                "unitPrice": 7699.00,
+                "lineTotal": 7699.00,
+                "order": null,
+                "product": {
+                    "id": "miren-table",
+                    "title": "Miren Coffee Table",
+                    "description": "Solid ash base and honed stone top.",
+                    "price": 7699.00,
+                    "oldPrice": null,
+                    "tag": null,
+                    "rating": 4.5,
+                    "category": "Furniture",
+                    "categoryId": "cat-1",
+                    "categoryEntity": null,
+                    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1200",
+                    "sku": "LEW-FUR-0003",
+                    "stockQuantity": 15,
+                    "isActive": true
+                }
+            }
+        ]
+    }
+]]
+    },
+    {
+      "name": "T-API-SHIP-003-Retrieve All Deliveries",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [[
+    {
+        "id": 6,
+        "orderId": "LWS-87585",
+        "userId": "user-001",
+        "status": "Processing",
+        "carrier": "Lewis Logistics",
+        "trackingNumber": "LL-LWS-87585",
+        "origin": "Johannesburg Distribution Centre",
+        "destination": "123 Main St, City, State 12345",
+        "currentLocation": "Order received at the dispatch hub",
+        "shippedAtUtc": null,
+        "estimatedDeliveryAtUtc": "2026-06-23T10:44:14.2908731",
+        "deliveredAtUtc": null,
+        "updatedAtUtc": "2026-06-18T10:44:14.2908731"
+    },
+    {
+        "id": 1,
+        "orderId": "ORD-001-20260512",
+        "userId": "user-001",
+        "status": "Processing",
+        "carrier": "Lewis Logistics",
+        "trackingNumber": "LL-ORD-001-20260512",
+        "origin": "Johannesburg Distribution Centre",
+        "destination": "123 Main St, City, State 12345",
+        "currentLocation": "Queued for packing",
+        "shippedAtUtc": null,
+        "estimatedDeliveryAtUtc": "2026-06-22T10:14:03.5333333",
+        "deliveredAtUtc": null,
+        "updatedAtUtc": "2026-06-18T10:14:03.5333333"
+    }
+]]
+    },
+    {
+      "name": "T-API-SHIP-004-Retrieve Delivery by Order ID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [[
+    {
+        "id": 6,
+        "orderId": "LWS-87585",
+        "userId": "user-001",
+        "status": "Processing",
+        "carrier": "Lewis Logistics",
+        "trackingNumber": "LL-LWS-87585",
+        "origin": "Johannesburg Distribution Centre",
+        "destination": "123 Main St, City, State 12345",
+        "currentLocation": "Order received at the dispatch hub",
+        "shippedAtUtc": null,
+        "estimatedDeliveryAtUtc": "2026-06-23T10:44:14.2908731",
+        "deliveredAtUtc": null,
+        "updatedAtUtc": "2026-06-18T10:44:14.2908731"
+    }
+]]
+    },
+    {
+      "name": "T-API-SHIP-005-Filter Deliveries by Shipment Status",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "T-API-SHIP-006-Filter Deliveries by Order ID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [[
+    {
+        "id": 6,
+        "orderId": "LWS-87585",
+        "userId": "user-001",
+        "status": "Processing",
+        "carrier": "Lewis Logistics",
+        "trackingNumber": "LL-LWS-87585",
+        "origin": "Johannesburg Distribution Centre",
+        "destination": "123 Main St, City, State 12345",
+        "currentLocation": "Order received at the dispatch hub",
+        "shippedAtUtc": null,
+        "estimatedDeliveryAtUtc": "2026-06-23T10:44:14.2908731",
+        "deliveredAtUtc": null,
+        "updatedAtUtc": "2026-06-18T10:44:14.2908731"
+    }
+]]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

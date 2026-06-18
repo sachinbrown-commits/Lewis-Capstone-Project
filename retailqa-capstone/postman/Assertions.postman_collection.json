@@ -1,0 +1,56 @@
+{
+  "info": {
+    "_postman_id": "7acd98f0-883f-4104-b8fc-a89f0ddc894d",
+    "name": "Assertions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53967619"
+  },
+  "item": [
+    {
+      "name": "200 OK",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c2VyLTAwMSIsImVtYWlsIjoidGVzdC5jdXN0b21lckBsZXdpc3N0b3Jlcy5sb2NhbCIsInJvbGUiOiJDdXN0b21lciIsIm5iZiI6MTc4MTc3Nzk5MCwiZXhwIjoxNzgyMzgyNzkwLCJpYXQiOjE3ODE3Nzc5OTAsImlzcyI6Ikxld2lzU3RvcmVzTW9ja0lzc3VlciIsImF1ZCI6Ikxld2lzU3RvcmVzTW9ja0F1ZGllbmNlIn0.B1eppeYppQB46a9wZu4QCYH7UjJcpAYWqCkAFm3C1tg",
+    "user": {
+        "id": "user-001",
+        "email": "test.customer@lewisstores.local",
+        "role": "Customer",
+        "fullName": "Test Customer One",
+        "phone": "555-0001",
+        "address": "123 Main St, City, State 12345"
+    }
+}]
+    },
+    {
+      "name": "401 Unauthorized",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c2VyLTAwMSIsImVtYWlsIjoidGVzdC5jdXN0b21lckBsZXdpc3N0b3Jlcy5sb2NhbCIsInJvbGUiOiJDdXN0b21lciIsIm5iZiI6MTc4MTc3ODA3NCwiZXhwIjoxNzgyMzgyODc0LCJpYXQiOjE3ODE3NzgwNzQsImlzcyI6Ikxld2lzU3RvcmVzTW9ja0lzc3VlciIsImF1ZCI6Ikxld2lzU3RvcmVzTW9ja0F1ZGllbmNlIn0.o1eYT9dfwkx4sGMIgNLQO9Y0ZPSQUYeYg-nfUtjKwXE",
+    "user": {
+        "id": "user-001",
+        "email": "test.customer@lewisstores.local",
+        "role": "Customer",
+        "fullName": "Test Customer One",
+        "phone": "555-0001",
+        "address": "123 Main St, City, State 12345"
+    }
+}]
+    },
+    {
+      "name": "403 Forbidden",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "message": "Invalid credentials."
+}]
+    }
+  ]
+}

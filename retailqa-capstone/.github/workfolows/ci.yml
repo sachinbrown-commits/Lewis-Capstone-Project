@@ -1,0 +1,45 @@
+name: Lewis Capstone Full CI Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  full-test-suite:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install project dependencies
+        run: npm install
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run Cypress UI Tests
+        run: npx cypress run
+
+      - name: Run Authentication API Tests
+        run: newman run "postman/collections/Authentication APIs.postman_collection.json" -e "postman/environments/New Environment.postman_environment.json"
+
+      - name: Run Shipment API Tests
+        run: newman run "postman/collections/Shipment APIs.postman_collection.json" -e "postman/environments/New Environment.postman_environment.json"
+
+      - name: Run Delivery API Tests
+        run: newman run "postman/collections/Delivery APIs.postman_collection.json" -e "postman/environments/New Environment.postman_environment.json"
+
+      - name: Run E2E API Tests
+        run: newman run "postman/collections/E2E Testing.postman_collection.json" -e "postman/environments/New Environment.postman_environment.json"
+
+      - name: Run SQL Validation Tests
+        shell: pwsh
+        run: ./sql/run_validation.ps1

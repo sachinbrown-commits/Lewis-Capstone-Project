@@ -1,0 +1,98 @@
+{
+  "info": {
+    "_postman_id": "45a0407d-7a7c-4999-843b-a4150406ce87",
+    "name": "Delivery APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53967619"
+  },
+  "item": [
+    {
+      "name": "T-API-DEL-001-Retrieve Delivery by ID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "id": 1,
+    "orderId": "ORD-001-20260512",
+    "userId": "user-001",
+    "status": "Processing",
+    "carrier": "Lewis Logistics",
+    "trackingNumber": "LL-ORD-001-20260512",
+    "origin": "Johannesburg Distribution Centre",
+    "destination": "123 Main St, City, State 12345",
+    "currentLocation": "Queued for packing",
+    "shippedAtUtc": null,
+    "estimatedDeliveryAtUtc": "2026-06-22T10:14:03.5333333",
+    "deliveredAtUtc": null,
+    "updatedAtUtc": "2026-06-18T10:14:03.5333333"
+}]
+    },
+    {
+      "name": "T-API-DEL-002-Verify POD Recorded",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "id": 1,
+    "orderId": "ORD-001-20260512",
+    "userId": "user-001",
+    "status": "Processing",
+    "carrier": "Lewis Logistics",
+    "trackingNumber": "LL-ORD-001-20260512",
+    "origin": "Johannesburg Distribution Centre",
+    "destination": "123 Main St, City, State 12345",
+    "currentLocation": "Queued for packing",
+    "shippedAtUtc": null,
+    "estimatedDeliveryAtUtc": "2026-06-22T10:14:03.5333333",
+    "deliveredAtUtc": null,
+    "updatedAtUtc": "2026-06-18T10:14:03.5333333"
+}]
+    },
+    {
+      "name": "T-API-DEL-003 — Verify Delivery Notification Triggered",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "id": 1,
+    "orderId": "ORD-001-20260512",
+    "userId": "user-001",
+    "status": "Processing",
+    "carrier": "Lewis Logistics",
+    "trackingNumber": "LL-ORD-001-20260512",
+    "origin": "Johannesburg Distribution Centre",
+    "destination": "123 Main St, City, State 12345",
+    "currentLocation": "Queued for packing",
+    "shippedAtUtc": null,
+    "estimatedDeliveryAtUtc": "2026-06-22T10:14:03.5333333",
+    "deliveredAtUtc": null,
+    "updatedAtUtc": "2026-06-18T10:14:03.5333333"
+}]
+    },
+    {
+      "name": "T-API-DEL-004 — Verify Delivery Tracking Information",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [{
+    "id": 1,
+    "orderId": "ORD-001-20260512",
+    "userId": "user-001",
+    "status": "Processing",
+    "carrier": "Lewis Logistics",
+    "trackingNumber": "LL-ORD-001-20260512",
+    "origin": "Johannesburg Distribution Centre",
+    "destination": "123 Main St, City, State 12345",
+    "currentLocation": "Queued for packing",
+    "shippedAtUtc": null,
+    "estimatedDeliveryAtUtc": "2026-06-22T10:14:03.5333333",
+    "deliveredAtUtc": null,
+    "updatedAtUtc": "2026-06-18T10:14:03.5333333"
+}]
+    }
+  ]
+}

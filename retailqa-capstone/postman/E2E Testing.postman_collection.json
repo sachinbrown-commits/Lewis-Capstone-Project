@@ -1,0 +1,42 @@
+{
+  "info": {
+    "_postman_id": "000a2fb3-e552-453a-bec2-98f87169e8ff",
+    "name": "E2E Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53967619"
+  },
+  "item": [
+    {
+      "name": "Order Status Validation",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Delivery Status Validation",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Stock Quantity Validation",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Payment Status Cross-Layer Validation",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
