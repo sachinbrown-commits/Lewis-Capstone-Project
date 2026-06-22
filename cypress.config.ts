@@ -1,15 +1,13 @@
-import { defineConfig } from 'cypress'
+const { defineConfig } = require("cypress");
 
-export default defineConfig({
-  projectId: 'cgwuou',
+module.exports = defineConfig({
+  projectId: 'wdah9c',
   e2e: {
-    experimentalStudio: true,
-    baseUrl: 'http://localhost:3000',
-    specPattern: 'cypress/e2e/**/*.cy.ts',
-    supportFile: 'cypress/support/e2e.ts',
-    video: true,
-    screenshotOnRunFailure: true,
+    baseUrl: "http://localhost:3000", // your frontend
     viewportWidth: 1280,
     viewportHeight: 720,
+    defaultCommandTimeout: 8000,
+    video: true,
+    screenshotOnRunFailure: true
   },
-})
+});

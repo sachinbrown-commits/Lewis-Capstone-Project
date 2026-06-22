@@ -175,3 +175,9 @@ PRINT 'Payment methods: 5';
 PRINT 'Support cases: 3';
 PRINT 'Defect reports: 2';
 GO
+
+USE [LewisStoresDb];
+SELECT Id, OrderId, UserId, Status, RequestedAmount
+FROM [ReturnRequests];
+
+SELECT Id, StockQuantity FROM Products WHERE Id = 'cloudrest-mattress'
