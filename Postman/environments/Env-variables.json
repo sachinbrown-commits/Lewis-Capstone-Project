@@ -1,0 +1,16 @@
+{
+	"id": "c97190f6-33e9-4b93-84e3-e849bd71a4a9",
+	"name": "New Environment",
+	"values": [
+		{
+			"key": "localhost",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-06-25T06:52:38.498Z",
+	"_postman_exported_using": "Postman/12.16.1"
+}

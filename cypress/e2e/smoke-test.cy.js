@@ -28,7 +28,6 @@ describe('Smoke Test - Framework Setup Verification', () => {
     });
     
     it('should have valid selector methods', () => {
-        // This test just proves the methods exist
         expect(loginPage.emailInput).to.be.a('function');
         expect(loginPage.fillEmail).to.be.a('function');
         expect(orderPage.addProductToCart).to.be.a('function');
@@ -39,10 +38,7 @@ describe('Smoke Test - Framework Setup Verification', () => {
     });
     
     it('Cypress should be able to visit a page', () => {
-        // This will PROBABLY fail because we don't have a real website
-        // But it proves Cypress can try to navigate
         cy.visit('/', { failOnStatusCode: false });
-        
         cy.log('✓ Cypress can navigate to pages');
     });
 });

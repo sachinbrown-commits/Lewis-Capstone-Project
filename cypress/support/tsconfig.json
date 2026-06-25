@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "target": "ES6",
+    "lib": ["ES6", "dom"],
+    "types": ["cypress", "node"],
+    "moduleResolution": "node",
+    "strict": true
+  },
+  "include": ["cypress/**/*.ts", "**/*.ts"]
+}

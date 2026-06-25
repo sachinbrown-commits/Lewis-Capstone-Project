@@ -117,6 +117,10 @@ FROM Users u
 ORDER BY u.Email;
 GO
 
+SELECT Id, Title, StockQuantity
+FROM Products
+WHERE Id = 11;
+
 -- T-DB-INT-009: Payment Method Validation
 -- Verify all payment methods have complete data
 SELECT 

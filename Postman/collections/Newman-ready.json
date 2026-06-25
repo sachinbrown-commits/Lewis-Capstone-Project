@@ -1,0 +1,905 @@
+{
+  "info": {
+    "_postman_id": "d5eec8da-145d-4b17-ada2-2768b546eb2c",
+    "name": "LewisCapstoneProject",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53074333",
+    "_collection_link": "https://go.postman.co/collection/53074333-d5eec8da-145d-4b17-ada2-2768b546eb2c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "NewOrder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{supabase_service_role_api_key_02jn}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"total\": 35994.00,\r\n  \"items\": \"Luxe Down Pillows (Set of 2)\",\r\n  \"itemsList\": [\r\n    {\r\n      \"productId\": \"luxe-pillows\",\r\n      \"quantity\": 6,\r\n      \"unitPrice\": 5999.00\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Very status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "NoOrderIDDuplicate",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Verify status code is 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ1c2VyLTAwMiIsImVtYWlsIjoic2FyYWguam9obnNvbkBsZXdpc3N0b3Jlcy5sb2NhbCIsInJvbGUiOiJDdXN0b21lciIsIm5iZiI6MTc4MDY1MTUyNCwiZXhwIjoxNzgxMjU2MzI0LCJpYXQiOjE3ODA2NTE1MjQsImlzcyI6Ikxld2lzU3RvcmVzTW9ja0lzc3VlciIsImF1ZCI6Ikxld2lzU3RvcmVzTW9ja0F1ZGllbmNlIn0.zDwYeiHc5sKuhWK7mg4lg-pY2SCfZwxKhvnJdT1Ry0U",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 3,\r\n  \"total\": 1,\r\n  \"items\": \"Aurora Wireless Speaker x1\",\r\n  \"itemsList\": [\r\n    {\r\n      \"productId\": \"aurora-speaker\",\r\n      \"quantity\": 1,\r\n      \"unitPrice\": 8999.00\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Orders",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "packages": {},
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0w43}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Auth",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Very status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbi0wMDEiLCJlbWFpbCI6ImFkbWluQGxld2lzc3RvcmVzLmxvY2FsIiwicm9sZSI6IkFkbWluIiwibmJmIjoxNzgwNjQ4MjkyLCJleHAiOjE3ODEyNTMwOTIsImlhdCI6MTc4MDY0ODI5MiwiaXNzIjoiTGV3aXNTdG9yZXNNb2NrSXNzdWVyIiwiYXVkIjoiTGV3aXNTdG9yZXNNb2NrQXVkaWVuY2UifQ.pwz-sSpAMx3jLI6HdfI2CK6c6kt_d5Q4HoTDOEz6X9I",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Auth/me",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Auth",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "OrderTotalCalculation",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Verify status code is 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "})\r",
+              "\r",
+              "let jsonData = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Order ID is generated\", function () {\r",
+              "    pm.expect(jsonData.orderId).to.be.undefined;\r",
+              "    pm.expect(jsonData.orderId).to.not.be.null;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Order status is confirmed\", function () {\r",
+              "    pm.expect(jsonData.status).to.eql(\"Processing\");\r",
+              "});\r",
+              "\r",
+              "pm.collectionVariables.set(\"createdOrderId\", jsonData.orderId);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{supabase_service_role_api_key_0cse}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"total\": 3,\r\n  \"items\": \"Smart Air Fryer Oven\",\r\n  \"itemsList\": [\r\n    {\r\n      \"productId\": \"air-fryer\",\r\n      \"quantity\": 12,\r\n      \"unitPrice\": 9999.00\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ExpiryDate",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{supabase_service_role_api_key_1dzm}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cardholderName\": \"Test Customer One\",\r\n  \"cardNumber\": \"1521485615648651\",\r\n  \"brand\": \"Visa\",\r\n  \"expiry\": \"01/01\",\r\n  \"isDefault\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/PaymentMethods",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "PaymentMethods"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RejectDeclinedPayment",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_1dzm}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cardholderName\": \"Sarah Johnson\",\r\n  \"cardNumber\": \"126544135215\",\r\n  \"brand\": \"Visa\",\r\n  \"expiry\": \"10/20\",\r\n  \"isDefault\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/PaymentMethods",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "PaymentMethods"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PreventDuplicateCharge",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0p5h}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cardholderName\": \"Test Customer One\",\r\n  \"cardNumber\": \"116515616513\",\r\n  \"brand\": \"Visa\",\r\n  \"expiry\": \"12/26\",\r\n  \"isDefault\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/PaymentMethods",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "PaymentMethods"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "IncorrectCardDetails",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_0cse}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cardholderName\": \"Test Customer One\",\r\n  \"cardNumber\": \"dsfdgfgg254556\",\r\n  \"brand\": \"Visa\",\r\n  \"expiry\": \"12/26\",\r\n  \"isDefault\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/PaymentMethods",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "PaymentMethods"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SuccessfulSettlementAuthorizedPayment",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Verify status code is 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "})\r",
+              "\r",
+              "let jsonData = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Order ID is generated\", function () {\r",
+              "    pm.expect(jsonData.orderId).to.be.undefined;\r",
+              "    pm.expect(jsonData.orderId).to.not.be.null;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Order status is confirmed\", function () {\r",
+              "    pm.expect(jsonData.status).to.eql(\"Processing\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_0p5h}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cardholderName\": \"Sarah Johnson\",\r\n  \"cardNumber\": \"132565499875\",\r\n  \"brand\": \"Visa\",\r\n  \"expiry\": \"10/28\",\r\n  \"isDefault\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/PaymentMethods",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "PaymentMethods"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "NEWORDER",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_14ks}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"total\": 1,\r\n  \"items\": \"Smart Air Fryer Oven\",\r\n  \"itemsList\": [\r\n    {\r\n      \"productId\": \"air-fryer\",\r\n      \"quantity\": 12,\r\n      \"unitPrice\": 9999.00\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Return",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_02jn}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"orderId\": \"LWS-93186\",\r\n  \"reason\": \"Items defective\",\r\n  \"requestedAmount\": 35994.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Returns",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Returns"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/Returns",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{supabase_service_role_api_key_13zo}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/Returns",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Returns"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/Returns",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_13mu}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"orderId\": \"ORD-001-20260512\",\r\n  \"reason\": \"Item defective\",\r\n  \"requestedAmount\": 32699.11\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Returns",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Returns"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Orders",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{supabase_service_role_api_key_13mu}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateReturnOrder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_0f9x}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status\": \"Accepted\",\r\n  \"approvedAmount\": 32699.11,\r\n  \"resolutionNotes\": \"Full refund issued to original payment method\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Returns/3/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Returns",
+            "3",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "createdOrderId",
+      "value": ""
+    },
+    {
+      "key": "supabase_service_role_api_key_0cse",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_1dzm",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0p5h",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_0cse",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_0p5h",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_1dzm",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0w43",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_13mu",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_14ks",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_02jn",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_02jn",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_13zo",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_13mu",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_13mu",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_0f9x",
+      "secret": true
+    }
+  ]
+}
