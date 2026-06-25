@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jira</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://redacademy-team-quallityengineer.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-141]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-141">Duplicate orders are created when the submit order action is triggered multiple times.</a>
+            <span class="subText">
+               Created: 25/Jun/26                   &nbsp;Updated: 25/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                id="word_reporter_712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A3351100b-61da-488b-b88b-dde6c3144eff">
+                    Sachin Brown
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                id="word_assignee_712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A3351100b-61da-488b-b88b-dde6c3144eff">
+                    Sachin Brown
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11272-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Picture9idempotency.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Duplicate</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                duplicates
+            </td>
+            <td>
+                <a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-89">
+                     LCP-89                 </a>
+            </td>
+            <td>
+                Idempotency - Double clicking checkou...
+            </td>
+            <td>
+                Bug
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-11272-value" class="value" bgcolor="#ffffff" width="80%">      0|i001db:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Issue Type:<br/>
+Bug</p>
+
+<p>Priority:<br/>
+Critical</p>
+
+<p>Severity:<br/>
+Critical</p>
+
+<p>Module:<br/>
+Order Management</p>
+
+<p>Related Test Case:<br/>
+T-UI-ORD-009 - Idempotency - No Duplicate Order</p>
+
+<p>Environment:<br/>
+QA Environment<br/>
+Browser: Chrome<br/>
+Application Version: v1.0</p>
+
+<p>Preconditions:</p>
+
+<ul>
+	<li>User is logged in.</li>
+	<li>Cart contains valid products.</li>
+</ul>
+
+
+<p>Steps to Reproduce:</p>
+
+<ol>
+	<li>Add products to cart.</li>
+	<li>Proceed to checkout.</li>
+	<li>Click Submit Order multiple times quickly.</li>
+	<li>Observe created orders.</li>
+</ol>
+
+
+<p>Expected Result:<br/>
+Only one order should be created regardless of repeated submissions.</p>
+
+<p>Actual Result:<br/>
+Multiple identical orders are created.</p>
+
+<p>Impact:<br/>
+Duplicate orders can result in double billing, inventory discrepancies, customer complaints, and financial loss.</p>
+
+<p>Root Cause Analysis (RCA):<br/>
+Idempotency validation is missing or not enforced during order creation.</p>
+
+<p>Status:<br/>
+Open</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-140]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-140">Confirmed orders can still be modified after order confirmation.</a>
+            <span class="subText">
+               Created: 25/Jun/26                   &nbsp;Updated: 25/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                id="word_reporter_712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A3351100b-61da-488b-b88b-dde6c3144eff">
+                    Sachin Brown
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                id="word_assignee_712020:3351100b-61da-488b-b88b-dde6c3144eff"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A3351100b-61da-488b-b88b-dde6c3144eff">
+                    Sachin Brown
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11271-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-11271-value" class="value" bgcolor="#ffffff" width="80%">      0|i001d3:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Module:<br/>
+Order Management</p>
+
+<p>Related Test Case:<br/>
+T-UI-ORD-007 - Cannot modify confirmed order</p>
+
+<p>Environment:<br/>
+QA Environment<br/>
+Browser: Chrome<br/>
+Application Version: v1.0</p>
+
+<p>Preconditions:</p>
+
+<ul>
+	<li>User is logged in.</li>
+	<li>Order has been successfully confirmed.</li>
+</ul>
+
+
+<p>Steps to Reproduce:</p>
+
+<ol>
+	<li>Login to the application.</li>
+	<li>Create a valid order.</li>
+	<li>Confirm the order.</li>
+	<li>Navigate to Order Details.</li>
+	<li>Attempt to modify product quantity or delivery information.</li>
+	<li>Save changes.</li>
+</ol>
+
+
+<p>Expected Result:<br/>
+Confirmed orders should be locked and not allow modifications.</p>
+
+<p>Actual Result:<br/>
+System allows modifications to a confirmed order.</p>
+
+<p>Impact:<br/>
+Order integrity may be compromised and shipment or billing information may become inconsistent.</p>
+
+<p>Root Cause Analysis (RCA):<br/>
+Order status validation is not enforced when update requests are submitted.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-139]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-139">Duplicate Refunds Processed for the Same Payment Request</a>
+            <span class="subText">
+               Created: 18/Jun/26                   &nbsp;Updated: 18/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_reporter_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_assignee_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11238-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Refund.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    DuplicateError.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Blocks</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                blocks
+            </td>
+            <td>
+                <a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-111">
+                     <strike>LCP-111</strike>                 </a>
+            </td>
+            <td>
+                Successful Refund of Settled Payment
+            </td>
+            <td>
+                Done
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-11238-value" class="value" bgcolor="#ffffff" width="80%">      0|i001cv:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Defect ID:</b> DEF-004</p>
+
+<p>The Refund API allows multiple refund transactions to be processed for the same settled payment. When the same refund request is submitted more than once, the API creates additional refund transactions instead of preventing duplicate refunds or returning the existing refund record.</p>
+
+<p><b>Preconditions</b></p>
+
+<ol>
+	<li>An order has been successfully created via the Orders API.</li>
+	<li>The payment has been successfully authorized, captured, and settled.</li>
+	<li>The order is eligible for a refund according to business rules.</li>
+	<li>Valid authentication credentials/token are available.</li>
+	<li>The Refund API endpoint is available and accessible in Postman.</li>
+	<li>The Payment ID and Order ID are known and available for testing.</li>
+	<li>The user has permission to process refunds.</li>
+</ol>
+
+
+<p><b>Steps to Reproduce</b></p>
+
+<ol>
+	<li>Open Postman.</li>
+	<li>Retrieve the payment details and verify the payment status is <b>Settled</b>.</li>
+	<li>Send a POST request to the Refund endpoint with a valid Payment ID and refund amount.</li>
+	<li>Verify that the refund request is processed successfully.</li>
+	<li>Submit the exact same refund request again using the same Payment ID and refund amount.</li>
+	<li>Retrieve the refund records and transaction history for the payment.</li>
+	<li>Observe the refund transactions created by the API.</li>
+</ol>
+
+
+<p><b>Expected Result</b></p>
+
+<ol>
+	<li>The first refund request is processed successfully.</li>
+	<li>A refund transaction is created and marked as <b>Successful</b>.</li>
+	<li>The refunded amount matches the original settled payment amount.</li>
+	<li>The order status is updated appropriately.</li>
+	<li>The refund is recorded in transaction history.</li>
+	<li>When the same refund request is submitted again, the API rejects the request or returns the existing refund record according to business rules.</li>
+	<li>No duplicate refund transactions are created.</li>
+</ol>
+
+
+<p><b>Actual Result</b></p>
+
+<ol>
+	<li>The initial refund request is processed successfully.</li>
+	<li>The same refund request can be submitted multiple times.</li>
+	<li>Additional refund transactions are created for the same payment.</li>
+	<li>Multiple refunds are processed against the same settled payment.</li>
+	<li>Duplicate refund records appear in transaction history.</li>
+</ol>
+
+
+<p><b>Impact</b></p>
+
+<ul>
+	<li>Customers may receive multiple refunds for a single payment.</li>
+	<li>Financial losses may occur due to over-refunding.</li>
+	<li>Transaction history becomes inaccurate.</li>
+	<li>Audit and reconciliation processes are compromised.</li>
+	<li>Violates idempotency and refund business rules.</li>
+</ul>
+
+
+
+<p><b>Suggested Fix</b><br/>
+Implement idempotency validation and refund eligibility checks to prevent duplicate refunds for the same payment transaction. The API should either reject duplicate requests with an appropriate error response or return the original refund transaction.</p>
+
+<p><b>Severity:</b> Critical</p>
+<ul class="alternate" type="square">
+	<li>This can directly result in duplicate financial refunds and monetary loss.<br/>
+<b>Priority:</b> High</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-138]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-138">Payment Processor Accepts Declined Payment</a>
+            <span class="subText">
+               Created: 18/Jun/26                   &nbsp;Updated: 18/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_reporter_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_assignee_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11205-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    1milOrderUI.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    EvidenceOfWrongCardNum.mp4 &nbsp;&nbsp;&nbsp;
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    RejectDeclinedPayment.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Blocks</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                blocks
+            </td>
+            <td>
+                <a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-78">
+                     <strike>LCP-78</strike>                 </a>
+            </td>
+            <td>
+                Graceful Handling of Payment Decline
+            </td>
+            <td>
+                Done
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-11205-value" class="value" bgcolor="#ffffff" width="80%">      0|i001cn:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Defect ID:</b> DEF-003</p>
+
+<p><b>Description</b></p>
+
+<p>The application does not handle payment decline scenarios correctly. When using a payment method configured to simulate a declined payment, the payment is processed successfully instead of being declined by the payment processor.</p>
+
+<p><b>Preconditions</b></p>
+
+<ol>
+	<li>User is logged into the application.</li>
+	<li>At least one item has been added to the shopping cart.</li>
+	<li>User has navigated to the payment page.</li>
+	<li>A test payment method configured to simulate a declined payment is available.</li>
+	<li>Payment form is accessible and ready for input.</li>
+</ol>
+
+
+<p><b>Steps to Reproduce</b></p>
+
+<ol>
+	<li>Navigate to the checkout/payment page.</li>
+	<li>Enter valid payment details that are configured to result in a payment decline.</li>
+	<li>Enter all other required payment information correctly.</li>
+	<li>Click the Pay Now or Submit Payment button.</li>
+	<li>Wait for the payment response from the payment processor.</li>
+	<li>Observe the application's response.</li>
+</ol>
+
+
+<p><b>Expected Result</b></p>
+
+<ol>
+	<li>The payment is declined by the payment processor.</li>
+	<li>A clear and user-friendly error message is displayed indicating that the payment could not be processed.</li>
+	<li>The user remains on the payment page and is given the opportunity to retry or use a different payment method.</li>
+	<li>No order is created or completed as a result of the declined payment.</li>
+	<li>No payment is captured or charged to the customer.</li>
+	<li>The declined transaction is logged for audit and troubleshooting purposes.</li>
+	<li>The application remains stable and does not display system errors, crash, or expose sensitive payment information.</li>
+</ol>
+
+
+<p><b>Actual Result</b></p>
+
+<ol>
+	<li>The payment was not declined by the payment processor.</li>
+	<li>The payment was processed successfully.</li>
+	<li>The order was created/completed.</li>
+	<li>The system did not display a payment decline message.</li>
+	<li>The application treated the transaction as a successful payment.</li>
+</ol>
+
+
+<p><b>Impact</b></p>
+
+<ul>
+	<li>Invalid payment scenarios cannot be tested accurately.</li>
+	<li>Customers may receive orders without successful payment authorization.</li>
+	<li>Financial reconciliation and reporting may be affected.</li>
+	<li>Payment processing business rules are bypassed.</li>
+	<li>Risk of revenue loss and incorrect order fulfillment.</li>
+</ul>
+
+
+<p><b>Severity:</b> Critical<br/>
+<b>Priority:</b> High</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-134]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-134">Payment Successfully Processed with Invalid CVV</a>
+            <span class="subText">
+               Created: 17/Jun/26                   &nbsp;Updated: 18/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_reporter_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_assignee_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11137-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    wrongcvv.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    wrongcvv evi.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Blocks</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                blocks
+            </td>
+            <td>
+                <a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-77">
+                     <strike>LCP-77</strike>                 </a>
+            </td>
+            <td>
+                Reject Payment with Invalid CVV
+            </td>
+            <td>
+                Done
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-11137-value" class="value" bgcolor="#ffffff" width="80%">      0|i001br:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Defect ID:</b> DEF-002</p>
+
+<p>The system processes and records a payment even when an invalid CVV is entered during checkout. The expected behavior is that the payment should be rejected and the user should be prompted to enter a valid CVV.</p>
+
+<h2><a name="Preconditions"></a>Preconditions</h2>
+
+<ol>
+	<li>User is logged into the retail application.</li>
+	<li>A valid product has been added to the cart.</li>
+	<li>User has proceeded to the checkout/payment page.</li>
+	<li>A valid payment method is available for testing.</li>
+</ol>
+
+
+<h2><a name="StepstoReproduce"></a>Steps to Reproduce</h2>
+
+<ol>
+	<li>Navigate to the checkout page.</li>
+	<li>Add a product to the cart and proceed to payment.</li>
+	<li>Enter a valid cardholder name.</li>
+	<li>Enter a valid card number.</li>
+	<li>Enter a valid expiry date.</li>
+	<li>Enter an invalid CVV.</li>
+	<li>Click the <b>Pay</b> or <b>Submit Payment</b> button.</li>
+	<li>Observe the payment response and order status.</li>
+</ol>
+
+
+<h2><a name="ExpectedResult"></a>Expected Result</h2>
+
+<ol>
+	<li>The payment should not be processed.</li>
+	<li>An appropriate validation message should be displayed, such as "Invalid CVV" or "Please enter a valid CVV".</li>
+	<li>The user should remain on the payment page.</li>
+	<li>No order payment should be recorded.</li>
+	<li>The order status should remain unpaid or pending payment.</li>
+	<li>No payment confirmation or success message should be displayed.</li>
+</ol>
+
+
+<h2><a name="ActualResult"></a>Actual Result</h2>
+
+<ol>
+	<li>The payment was successfully processed.</li>
+	<li>The order payment was recorded in the system.</li>
+	<li>The order status changed to Paid.</li>
+	<li>A payment confirmation message was displayed.</li>
+</ol>
+
+
+<h2><a name="Impact"></a>Impact</h2>
+
+<p>Invalid payment information is accepted.</p>
+
+<p>Financial transactions may be recorded incorrectly.</p>
+
+<p>Payment validation business rules are bypassed.</p>
+
+<p>Potential risk of fraudulent or failed payment processing.</p>
+
+
+<p><b>Severity:</b> Critical</p>
+
+<p><b>Priority:</b> High</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-132]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-132">Expired Card Gets Accepted During Payment Method Creation</a>
+            <span class="subText">
+               Created: 17/Jun/26                   &nbsp;Updated: 18/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_reporter_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_assignee_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11103-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    ExpiryDate.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Blocks</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                blocks
+            </td>
+            <td>
+                <a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-76">
+                     <strike>LCP-76</strike>                 </a>
+            </td>
+            <td>
+                Reject Payment with Expired Card
+            </td>
+            <td>
+                Done
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-11103-value" class="value" bgcolor="#ffffff" width="80%">      0|i001bb:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Defect ID:</b> DEF-001</p>
+
+<p>The system accepts and stores a payment method with an expired card expiry date. The API returns a successful response (201 Created) instead of validating and rejecting the expired card.</p>
+
+<p><b>Preconditions</b></p>
+
+<ul>
+	<li>User is authenticated.</li>
+	<li>Payment Methods API is available.</li>
+	<li>Postman is configured with the required authorization headers.</li>
+</ul>
+
+
+<p><b>Steps to Reproduce</b></p>
+
+<ol>
+	<li>Open Postman.</li>
+	<li>Send a POST request to <tt>/api/PaymentMethods</tt>.</li>
+	<li>Use the following request body: {<br/>
+  "cardholderName": "Test Customer One",<br/>
+  "cardNumber": "1521485615648651",<br/>
+  "brand": "Visa",<br/>
+  "expiry": "01/01",<br/>
+  "isDefault": true<br/>
+}</li>
+</ol>
+
+
+<ol>
+	<li>Click <b>Send</b>.</li>
+	<li>Observe the response returned by the API.</li>
+</ol>
+
+
+<p><b>Expected Result</b></p>
+
+<p>The system should validate the expiry date and reject the request with an appropriate error message  and a 400 Bad Request response.</p>
+
+<p><b>Actual Result</b></p>
+
+<p>The API accepts the expired card and returns a <b>201 Created</b> response. The payment method is successfully created and stored in the system.</p>
+
+<h2><a name="Impact"></a>Impact</h2>
+
+<ul>
+	<li>Invalid payment methods can be stored in the system.</li>
+	<li>Users may attempt transactions using expired cards.</li>
+	<li>Violates payment validation business rules.</li>
+	<li>Could lead to payment processing failures during checkout.</li>
+</ul>
+
+
+<p><b>Severity:</b> High</p>
+
+<p><b>Priority:</b> High</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-114]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-114">UI accepts incorrect card payment format</a>
+            <span class="subText">
+               Created: 08/Jun/26                   &nbsp;Updated: 08/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_reporter_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_assignee_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10989-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    wrongcardinfo.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    WrongCardNo.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10989-value" class="value" bgcolor="#ffffff" width="80%">      0|i0017b:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Pre-conditions</b><br/>
+User is on the payment page with a product/order ready for checkout.</p>
+
+<p><b>Test Steps</b></p>
+
+<ol>
+	<li>Enter an invalid card number format.</li>
+	<li>Enter an expired card date.</li>
+	<li>Enter an invalid CVV.</li>
+	<li>Click “Pay Now”.</li>
+</ol>
+
+
+<p><b>Expected Results</b> <br/>
+System validates card details and displays appropriate error messages for invalid format, expired card, or incorrect CVV. Payment is not processed.</p>
+
+<p><b>Actual Result</b> <br/>
+System approved invalid card details</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-112]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-112">API returns 201 instead of 409</a>
+            <span class="subText">
+               Created: 05/Jun/26                   &nbsp;Updated: 05/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_reporter_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                id="word_assignee_712020:4fb9d79c-b199-4dd2-98b6-fcc26f9be47d"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4fb9d79c-b199-4dd2-98b6-fcc26f9be47d">
+                    Keisha
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10923-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    DuplicateError.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10923-value" class="value" bgcolor="#ffffff" width="80%">      0|i0016v:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>This test validates that duplicate values are strictly rejected by the backend.</p>
+
+<p><b>Objective:</b> Verify the system blocks the creation of an order with an already existing OrderID.</p>
+
+<p><b>Pre-condition:</b> There is an existing order in the database with OrderID = ORD-001-20260512</p>
+
+<p><b>Test Steps:</b> Submit a new order with OrderID: ORD-001-20260512</p>
+
+<p><b>Expected Result:</b></p>
+
+<ul>
+	<li>The API returns a 400 Bad Request or 409 Conflict status code.</li>
+	<li>The response body contains a specific error message (e.g., 
+{“error”: “Duplicate OrderID”}
+<p>).<br/>
+The database does not create a duplicate record or overwrite the existing one.</p></li>
+</ul>
+
+
+<p>Actual Result</p>
+
+<ul>
+	<li>The API returns a 201 Created status code.</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-109]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-109">UI Bug -  Furniture page overlaps the product content area</a>
+            <span class="subText">
+               Created: 01/Jun/26                   &nbsp;Updated: 19/Jun/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                id="word_reporter_712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A6ec761b7-d45f-4a97-b7c4-f185ec36c14a">
+                    Umair Jattiem
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                id="word_assignee_712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A6ec761b7-d45f-4a97-b7c4-f185ec36c14a">
+                    Umair Jattiem
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10856-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260601-071229.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10856-value" class="value" bgcolor="#ffffff" width="80%">      0|i00167:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <h3><a name=""></a></h3>
+
+
+
+<p>The category filter menu on the Furniture page overlaps the product content area when the user scrolls down the page. Category labels remain visible over the "All Products" heading and product listing section, resulting in a cluttered and misaligned user interface.</p>
+
+<p><span class="image-wrap" style=""><img src="https://redacademy-team-quallityengineer.atlassian.net/rest/api/3/attachment/content/10810" alt="image-20260601-071229.png" width="667" style="border: 0px solid black" /></span></p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [LCP-108]&nbsp;<a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-108">API returns 401 instead of 403</a>
+            <span class="subText">
+               Created: 26/May/26                   &nbsp;Updated: 26/May/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Bug</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://redacademy-team-quallityengineer.atlassian.net/secure/BrowseProject.jspa?id=10099">Lewis-Capstone-Project</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                id="word_reporter_712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A6ec761b7-d45f-4a97-b7c4-f185ec36c14a">
+                    Umair Jattiem
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                id="word_assignee_712020:6ec761b7-d45f-4a97-b7c4-f185ec36c14a"
+                href="https://redacademy-team-quallityengineer.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A6ec761b7-d45f-4a97-b7c4-f185ec36c14a">
+                    Umair Jattiem
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10823-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://redacademy-team-quallityengineer.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260520-062940.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Blocks</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
+            <td>
+                is blocked by
+            </td>
+            <td>
+                <a href="https://redacademy-team-quallityengineer.atlassian.net/browse/LCP-27">
+                     <strike>LCP-27</strike>                 </a>
+            </td>
+            <td>
+                Status code assertions: 200, 401, 403
+            </td>
+            <td>
+                Done
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10823-value" class="value" bgcolor="#ffffff" width="80%">      0|i0015z:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Test Objective:<br/>
+403 Forbidden Assertion of account lockout functionality after 5 failed login attempts.</p>
+
+<p>Expected Result:<br/>
+API should return status code 403 Forbidden.</p>
+
+<p>Actual Result:<br/>
+API returned status code 401 Unauthorized instead of 403.</p>
+
+<p>Assertion Used:<br/>
+pm.response.to.have.status(403);</p>
+
+<p>Outcome:<br/>
+FAILED</p>
+
+<p>Observation:<br/>
+The current API implementation does not appear to support account lockout functionality.</p>
+
+<p><span class="image-wrap" style=""><img src="https://redacademy-team-quallityengineer.atlassian.net/rest/api/3/attachment/content/10744" alt="image-20260520-062940.png" width="380" style="border: 0px solid black" /></span></p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />Generated at Thu Jun 25 09:52:09 UTC 2026 by Sachin Brown using Jira 1001.0.0-SNAPSHOT#100292-rev:78eb2db72f78ef9463e923416f4731ef4f0c8d20.
+
+</body>
+</html>
